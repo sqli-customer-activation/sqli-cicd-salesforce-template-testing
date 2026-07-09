@@ -2,7 +2,7 @@
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Expense User</label>
     <description
-  >Grants employees the access needed to raise and follow their own expense claims: create, read, and edit Expenses, but never delete them. Required fields (Amount, Expense Date, Category, Status) are omitted from field permissions because the platform always makes them editable.</description>
+  >Grants employees the access needed to raise and follow their own expense claims: create, read, and edit Expenses, but never delete them.</description>
     <hasActivationRequired>false</hasActivationRequired>
     <objectPermissions>
         <allowCreate>true</allowCreate>
