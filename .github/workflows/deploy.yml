@@ -27,4 +27,4 @@ jobs:
             --set-default
 
       - name: Deploy
-        run: sf project deploy start --target-org target-org --test-level RunLocalTests --wait 30
+        run: sf project deploy start --source-dir force-app --target-org target-org --test-level RunLocalTests --wait 30
