@@ -27,4 +27,4 @@ jobs:
             --set-default
 
       - name: Validate deployment (check-only)
-        run: sf project deploy validate --target-org target-org --test-level RunLocalTests --wait 30
+        run: sf project deploy validate --target-org target-org --source-dir force-app --test-level RunLocalTests --wait 30
