@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comments__c</fullName>
+    <label>Comments</label>
+    <description
+  >Free-text justification from the employee, and the reason recorded by the approver when a claim is rejected.</description>
+    <inlineHelpText
+  >Explain the business purpose of the expense, including who attended if it was a meal.</inlineHelpText>
+    <type>LongTextArea</type>
+    <length>32768</length>
+    <visibleLines>4</visibleLines>
+</CustomField>

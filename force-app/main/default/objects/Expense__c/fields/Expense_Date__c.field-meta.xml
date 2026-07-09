@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Date__c</fullName>
+    <label>Expense Date</label>
+    <description
+  >Date the expense was incurred, used to attach the claim to the correct accounting period.</description>
+    <inlineHelpText
+  >Enter the date shown on the receipt, not the date you submit the claim.</inlineHelpText>
+    <type>Date</type>
+    <required>true</required>
+</CustomField>
