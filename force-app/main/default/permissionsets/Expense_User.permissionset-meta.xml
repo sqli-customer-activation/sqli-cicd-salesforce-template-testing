@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Expense User</label>
+    <description
+  >Grants employees the access needed to raise and follow their own expense claims: create, read, and edit Expenses, but never delete them. Required fields (Amount, Expense Date, Category, Status) are omitted from field permissions because the platform always makes them editable.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>false</allowDelete>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>false</viewAllRecords>
+        <viewAllFields>false</viewAllFields>
+        <object>Expense__c</object>
+    </objectPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <readable>true</readable>
+        <field>Expense__c.Account__c</field>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <readable>true</readable>
+        <field>Expense__c.Comments__c</field>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <readable>true</readable>
+        <field>Expense__c.Reimbursable__c</field>
+    </fieldPermissions>
+    <classAccesses>
+        <apexClass>ExpenseService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <tabSettings>
+        <tab>Expense__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>
